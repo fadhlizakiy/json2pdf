@@ -1,0 +1,304 @@
+$font-book   		: "Futura-Book";
+$font-bold   		: "Futura-Bold";
+$font-medium 		: "Futura-Medium";
+$font-light 		: "Futura-Light";
+$font-regular		: "bahnschrift";
+$font-jumbo			: "Roboto-Bold";
+$font-code			: "courier-new";
+
+$color1           : #3FBAEF;
+$color2           : #4DE4DD;
+$color3           : #FFC000;
+$color4           : #41FF00;
+
+$color-text		  : #4e4e4e;
+$white		  	  : #FFFFFF;
+$bg		  		  : #323232;
+
+$size-jumbo 	  : 50px;
+$size-title 	  : 20px;
+$size-regular 	  : 16px;
+$size-mini	  	  : 14px;
+
+$view-desktop	  : 1200px;
+$view-tablet1	  : 992px;
+$view-tablet2	  : 768px;
+
+$containerLength    : 800px;
+$containerLength-sm : 600px;
+
+/*Font Start */
+@font-face{
+	font-family: $font-regular;
+	src:url("../fonts/bahnschrift.ttf") format("truetype");	
+}
+
+@font-face{
+	font-family: $font-bold;
+	src:url("../fonts/roboto-bold.ttf") format("truetype");	
+}
+
+@font-face{
+	font-family: $font-jumbo;
+	src:url("../fonts/roboto-bold.ttf") format("truetype");	
+}
+
+@font-face{
+	font-family: $font-code;
+	src:url("../fonts/courier-new.ttf") format("truetype");	
+}
+
+/*Font End */
+
+/* General Start */
+a
+{
+	text-decoration:none !important;
+	color:inherit !important;
+}
+
+.start_content
+{
+	padding-top:60px !important;
+}
+
+.al_left
+{
+	text-align:left !important;
+}
+
+.al_center
+{
+	text-align:center !important;
+}
+
+.al_right
+{
+	text-align:right !important;
+}
+
+.vcenter 
+{
+    display: inline-block;
+    vertical-align: middle !important;
+    float: none !important;
+}
+
+.no_margin
+{
+	margin:0px !important;
+}
+
+.no_padding
+{
+	padding:0px !important;
+}
+
+.no_padding_left
+{
+	padding-left:0px !important;
+}
+.no_padding_right
+{
+	padding-right:0px !important;
+}
+
+.separator
+{
+	border-bottom:2px solid #ababab;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.img-pertamina
+{
+	border-bottom-left-radius:30px;
+	border-top-right-radius:30px;
+	margin-bottom:20px;
+}
+
+.img-main
+{
+	border-top-right-radius:30px;
+}
+
+.active
+{
+	display:block !important;
+}
+
+/* General End */
+
+.fMain
+{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.fMainText
+{
+	font-family:$font-bold;
+	font-size:30px;
+	text-align:center;
+	margin-bottom:10px;
+	
+	@media (min-width: $view-tablet2) 
+	{
+		font-size:50px;
+	}
+}
+
+.fMainSubText
+{
+	font-family:$font-regular;
+	font-size:18px;
+	text-align:center;
+	
+	
+}
+
+.fMeansHolder
+{
+	background:$color1;
+	margin-bottom:45px !important;
+	//background:linear-gradient(227deg, $color4 0%, $color1 80%, $color3 100%);
+}
+
+.fMeans
+{
+	padding:30px 30px;
+}
+
+.fMeans.fMeans1
+{
+}
+
+.fMeans.fMeans2
+{
+	background:$color3;
+}
+
+.fApproach
+{
+	font-family:$font-bold;
+	font-size:28px;
+	text-align:center;
+}
+
+.fForm
+{
+
+}
+
+.fQuestion
+{
+	font-family:$font-regular;
+	font-size:16px;
+	margin-top:5px;
+}
+
+.fQuestion span
+{
+	color:red;
+}
+
+.fInput
+{
+	width:100%;
+	font-family:$font-regular;
+	font-size:14px;
+	border:none;
+	padding:3px 10px;
+	background:white;
+	resize:none;
+	border-radius:6px;
+	height:30px;
+}
+
+textarea.fInput
+{
+	height:100px;
+}
+
+.fInput:focus
+{
+	outline: none;
+}
+
+.fSubmit
+{
+	font-family:$font-regular;
+	font-size:18px;
+	text-align:center;
+	float:right;
+	border:1px solid white;
+	background:none;
+	margin-top:5px;
+	color:white;
+	border-radius:6px;
+	padding:2px 10px;
+	transition:all 0.5s;
+}
+
+.fSubmit:hover
+{
+	background:white;
+	color:$color1;
+}
+
+.fCurl
+{
+	margin-top:12px;
+	background:$bg;
+	font-family:$font-code;
+	color:$color3;
+	padding:20px;
+	border-radius:6px;
+}
+
+.fCurlTitle
+{
+	font-family:$font-code;
+	font-size:14px;
+	color:$color3;
+	background:$bg;
+	width:60px;
+	padding:3px 5px;
+	margin-bottom:5px;
+}
+
+.fCurlDesc
+{
+	font-family:$font-regular;
+	font-size:14px;
+	margin-left:10px;
+}
+
+.fFZ
+{
+	background:white;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	font-family:$font-regular;
+	font-size:18px;
+	text-align:center;
+	padding:10px 10px;
+	
+	@media (min-width: $view-tablet2) 
+	{
+		text-align:right;
+	}
+}
+
+a
+{
+	color:$color1 !important;
+	transition:all 0.4s;
+}
+
+a:hover
+{
+	color:$color3 !important;
+}
